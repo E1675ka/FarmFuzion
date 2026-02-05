@@ -27,11 +27,10 @@ export default function About() {
   return (
     <section id="about" className="py-16 px-4 bg-white relative">
       <div className="max-w-7xl mx-auto relative z-10 px-8">
-
         <div
           ref={titleRef}
           style={titleStyle}
-          className=" z-10 h-40 rounded-xl p-12 text-white mb-8 relative"
+          className="z-10 h-24 sm:h-32 md:h-40 rounded-xl p-8 sm:p-12 text-white mb-8 relative"
         >
           <div className="absolute  h-40 inset-0">
             <Image
@@ -43,38 +42,38 @@ export default function About() {
             />
           </div>
 
-          <button onClick={scrollToAbout}
+          <button
+            onClick={scrollToAbout}
             data-variant="circular"
-            className="absolute flex left-1/2 -mt-16 mb-4">
+            className="absolute flex left-1/2 -translate-x-1/2 -mt-16 mb-4"
+          >
             <Image
               src="/icons/chevron-down.png"
               alt="Chevron Down"
-              width={42}
-              height={42}
-              className="bg-farm-light-green p-1.5 rounded-full"
+              width={32}
+              height={32}
+              className="bg-farm-light-green p-1.5 rounded-full sm:w-[42px] sm:h-[42px]"
             />
           </button>
 
-          <h2 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-h2 text-white text-center">
+          <h2 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-lg sm:text-2xl md:text-h2 text-white text-center px-2">
             About FarmFuzion
           </h2>
-
-
         </div>
 
         <div
           ref={contentRef}
           style={contentStyle}
-          className="bg-[#F4F9EC] rounded-[28px] p-8 -mt-20"
+          className="bg-[#F4F9EC] rounded-[28px] p-4 sm:p-6 md:p-8 mt-10 sm:-mt-16 md:-mt-20"
         >
-          <p className="text-gray-700 text-lg font-medium leading-relaxed mb-6 mt-10">
+          <p className="text-gray-700 text-xs sm:text-sm md:text-lg font-medium leading-relaxed mb-6 mt-6 sm:mt-8 md:mt-10">
             FarmFuzion is a digital infrastructure layer for agriculture,
             embedding bank-grade financial services directly into the agri-value
             chain. We provide financial services, commodity price information,
             weather forecasting, technical information into one integrable
             ecosystem.
           </p>
-          <p className="text-gray-700 text-lg font-medium leading-relaxed">
+          <p className="text-gray-700 text-xs sm:text-sm md:text-lg font-medium leading-relaxed">
             Built for scale, FarmFuzion supports near-time settlements, dynamic
             risk scoring, and alternative credit profiling through agronomic
             data, enabling institutions to extend capital, underwrite risk, and

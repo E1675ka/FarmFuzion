@@ -52,7 +52,6 @@ export default function Footer() {
       link: "https://linkedin.com",
     },
     { name: "X", src: "/icons/social/x.png", link: "https://x.com" },
-
   ];
 
   return (
@@ -78,8 +77,12 @@ export default function Footer() {
 
               <div className="text-sm text-white space-y-0.5 mb-6">
                 <p className="font-bold text-base mb-1">Head Office:</p>
-                <p className="text-sm leading-relaxed">Westgate Towers, 8th Floor, Suite 809</p>
-                <p className="text-sm leading-relaxed">Mithithi Road, Westlands</p>
+                <p className="text-sm leading-relaxed">
+                  Westgate Towers, 8th Floor, Suite 809
+                </p>
+                <p className="text-sm leading-relaxed">
+                  Mithithi Road, Westlands
+                </p>
                 <p className="text-sm leading-relaxed">Nairobi, Kenya</p>
               </div>
             </div>
@@ -92,7 +95,9 @@ export default function Footer() {
             >
               {/* Useful Links */}
               <div>
-                <h4 className="font-bold text-base mb-3 text-white">Useful Links</h4>
+                <h4 className="font-bold text-base mb-3 text-white">
+                  Useful Links
+                </h4>
                 <ul className="space-y-2 text-sm text-white">
                   <li>
                     <Link
@@ -121,9 +126,11 @@ export default function Footer() {
                 </ul>
               </div>
 
-              {/* Social */} 
+              {/* Social */}
               <div>
-                <h4 className="font-bold text-base mb-3  text-white">Follow Us</h4>
+                <h4 className="font-bold text-base mb-3  text-white">
+                  Follow Us
+                </h4>
                 <div className="flex gap-3">
                   {socialIcons.map((social, i) => (
                     <a
@@ -147,7 +154,6 @@ export default function Footer() {
                   ))}
                 </div>
               </div>
-
             </div>
           </div>
 
@@ -160,12 +166,14 @@ export default function Footer() {
             <p className="text-sm text-[#B8FF57]">©FarmFuzion 2025</p>
 
             <div className="flex flex-col sm:flex-row gap-3">
-              <button className=" text-sm">
+              <button className="bg-farm-light-green text-white px-3 sm:px-4 md:px-6 h-6 sm:h-7 md:h-[25px] text-[10px] sm:text-xs md:text-sm rounded-full font-medium whitespace-nowrap hover:bg-green-600 transition">
                 Register Now
               </button>
 
-              <button className="text-[#B8FF57] text-sm" 
-              data-variant="outline">
+              <button
+                className="border border-[#B8FF57] text-[#B8FF57] px-3 sm:px-4 md:px-6 h-6 sm:h-7 md:h-[25px] text-[10px] sm:text-xs md:text-sm rounded-full font-medium whitespace-nowrap hover:bg-[#B8FF57] hover:text-primary-dark transition"
+                data-variant="outline"
+              >
                 Subscribe To Our Newsletter
               </button>
             </div>

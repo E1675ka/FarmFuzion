@@ -60,11 +60,14 @@ export default function Hero() {
     }
   };
 
-  const balance = 123322122, limit = 9000.2
+  const balance = 123322122,
+    limit = 9000.2;
 
-  const formattedBalance = new Intl.NumberFormat('en-US').format(balance);
-  const formattedLimit = new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(limit);
-
+  const formattedBalance = new Intl.NumberFormat("en-US").format(balance);
+  const formattedLimit = new Intl.NumberFormat("en-US", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }).format(limit);
 
   return (
     <section className="pt-24 pb-12 px-4 bg-surface-white">
@@ -89,11 +92,11 @@ export default function Hero() {
             <div ref={buttonsRef} style={buttonsStyle} className="flex gap-4">
               {/* Using default button styles from your global.css */}
               <Link href="/registration">
-                <button className="px-4 text-white h-[25px] rounded-full">
+                <button className="px-3 sm:px-4 md:px-6 text-white h-6 sm:h-7 md:h-[25px] text-xs sm:text-sm md:text-base rounded-full font-medium whitespace-nowrap">
                   Register Now
                 </button>
               </Link>
-              <button className="px-4 text-white h-[25px] rounded-full">
+              <button className="px-3 sm:px-4 md:px-6 text-white h-6 sm:h-7 md:h-[25px] text-xs sm:text-sm md:text-base rounded-full font-medium whitespace-nowrap">
                 Partner With Us
               </button>
             </div>
@@ -129,15 +132,21 @@ export default function Hero() {
                   <div className="text-[20px] font-heading font-bold leading-[22px] text-primary-dark truncate">
                     ${formattedBalance}
                   </div>
-                  <div className="text-[11px] font-sans text-primary-dark/50 leading-[12px] mt-1">Available Balance</div>
+                  <div className="text-[11px] font-sans text-primary-dark/50 leading-[12px] mt-1">
+                    Available Balance
+                  </div>
                 </div>
               </div>
 
               {/* divider + footer */}
               <div className="mt-2 pt-3   ">
-                <div className="text-[11px] font-sans text-primary-dark/50 mb-0">Your Limit</div>
+                <div className="text-[11px] font-sans text-primary-dark/50 mb-0">
+                  Your Limit
+                </div>
                 <div className="flex items-center justify-between gap-2">
-                  <div className="text-sm font-heading font-semibold text-primary-dark">${formattedLimit}</div>
+                  <div className="text-sm font-heading font-semibold text-primary-dark">
+                    ${formattedLimit}
+                  </div>
 
                   <button
                     type="button"
@@ -152,19 +161,29 @@ export default function Hero() {
             {/* Transaction Complete Badge */}
             <div className="absolute bottom-16 flex-col right-[-34px] bg-surface-white rounded-xl shadow-lg p-2 flex items-center gap-2">
               <div className="w-8 h-8 bg-secondary-green rounded-full flex items-center justify-center flex-shrink-0">
-                <svg className="w-4 h-4 text-surface-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                <svg
+                  className="w-4 h-4 text-surface-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={3}
+                    d="M5 13l4 4L19 7"
+                  />
                 </svg>
               </div>
               <div className="text-[10px] text-secondary-green font-heading font-semibold leading-tight pr-1 text-center">
                 <div>Transaction</div>
                 <div>Complete</div>
               </div>
-
             </div>
 
             {/* Scroll Button */}
-            <button data-variant="circular"
+            <button
+              data-variant="circular"
               className="absolute bottom-0 left-[230px] transform -translate-x-1/2 translate-y-1/2 rounded-full p-3 shadow-lg"
             >
               <Image
@@ -191,9 +210,7 @@ export default function Hero() {
                 height={42}
               />
             </div>
-            <p className="text-h6 text-secondary-green">
-              One-Simple Dashboard
-            </p>
+            <p className="text-h6 text-secondary-green">One-Simple Dashboard</p>
           </div>
 
           <div
@@ -209,9 +226,7 @@ export default function Hero() {
                 height={42}
               />
             </div>
-            <p className="text-h6  text-secondary-green">
-              Real-time Insights
-            </p>
+            <p className="text-h6  text-secondary-green">Real-time Insights</p>
           </div>
 
           <div
@@ -227,12 +242,9 @@ export default function Hero() {
                 height={42}
               />
             </div>
-            <p className="text-h6 text-secondary-green">
-              No middlemen Needed
-            </p>
+            <p className="text-h6 text-secondary-green">No middlemen Needed</p>
           </div>
         </div>
-
       </div>
     </section>
   );

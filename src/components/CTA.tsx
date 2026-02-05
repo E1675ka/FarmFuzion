@@ -37,11 +37,11 @@ export default function CTA() {
           className="flex justify-center gap-4"
         >
           <Link href="/registration">
-            <button className="">
+            <button className="bg-farm-light-green text-white px-3 sm:px-4 md:px-6 h-6 sm:h-7 md:h-[25px] text-[10px] sm:text-xs md:text-sm rounded-full font-medium whitespace-nowrap hover:bg-green-600 transition">
               Register Now
             </button>
           </Link>
-          <button className="">
+          <button className="bg-farm-light-green text-white px-3 sm:px-4 md:px-6 h-6 sm:h-7 md:h-[25px] text-[10px] sm:text-xs md:text-sm rounded-full font-medium whitespace-nowrap hover:bg-green-600 transition">
             Partner With Us
           </button>
         </div>
