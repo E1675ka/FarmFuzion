@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply font-sans;
+    color: #00231d;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+    color: #00231d;
+  }
+
+  /* ============================
+     DEFAULT BUTTON = PRIMARY
+     ============================ */
+  button {
+    @apply inline-flex h-[25px] rounded-full px-4 items-center justify-center font-sans font-medium bg-primary-green text-white transition-colors duration-200 hover:bg-primary-green/90 focus:ring-secondary-green disabled:bg-background-cream disabled:text-gray-400 disabled:cursor-not-allowed;
+  }
+
+  /* ============================
+     OUTLINE BUTTON VARIANT
+     ============================ */
+  button[data-variant="outline"] {
+    @apply bg-transparent border border-[#B8FF5763] text-[#B8FF57];
+  }
+
+  button[data-variant="outline"]:hover {
+    @apply bg-[#B8FF57]/10;
+  }
+
+  button[data-variant="outline"]:disabled {
+    @apply border-gray-300 text-gray-400;
+  }
+
+  /* ============================ 
+   CIRCULAR BUTTON VARIANT 
+   ============================ */
+  button[data-variant="circular"] {
+    @apply w-12 h-12 p-0 rounded-full;
+    /* Ensures icon/content is centered */
+    @apply flex items-center justify-center;
+  }
+
+  button[data-variant="circular"]:hover {
+    @apply scale-110;
+  }
+
+}

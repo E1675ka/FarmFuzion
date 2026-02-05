@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78" height="78" viewBox="0 0 78 78">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00231d;
+      }
+
+      .cls-2 {
+        fill: #8dc71f;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_9" data-name="Rectangle 9" class="cls-1" width="44" height="44" transform="translate(-0.335 -0.335)"/>
+    </clipPath>
+  </defs>
+  <g id="ARROW" transform="translate(-850.331 1002.932) rotate(-90)">
+    <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-2" cx="39" cy="39" r="39" transform="translate(924.932 850.331)"/>
+    <g id="Mask_Group_1" data-name="Mask Group 1" class="cls-3" transform="translate(985.596 867.666) rotate(90)">
+      <path id="arrow_right_alt_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24" class="cls-1" d="M27.674,33.209,23.8,29.2l9.824-9.824H0V13.837H33.624L23.8,4.013,27.674,0l16.6,16.6Z" transform="translate(-0.131 5.586)"/>
+    </g>
+  </g>
+</svg>

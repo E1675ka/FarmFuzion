@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="71" viewBox="0 0 70 71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0a5b10;
+      }
+
+      .cls-2 {
+        fill: #8dc71d;
+      }
+    </style>
+  </defs>
+  <g id="ICON_3" data-name="ICON 3" transform="translate(-0.244)">
+    <ellipse id="Ellipse_5" data-name="Ellipse 5" class="cls-1" cx="35" cy="35.5" rx="35" ry="35.5" transform="translate(0.244 0)"/>
+    <path id="button_99862" class="cls-2" d="M111.4,105.978a3.841,3.841,0,0,1-5.432,5.431L95.6,101.044,85.239,111.409a3.84,3.84,0,1,1-5.431-5.431L90.174,95.611,79.808,85.245a3.84,3.84,0,0,1,5.431-5.431L95.6,90.18,105.97,79.815a3.841,3.841,0,0,1,5.432,5.431L101.037,95.611Z" transform="translate(-60.276 -60.353)"/>
+  </g>
+</svg>
